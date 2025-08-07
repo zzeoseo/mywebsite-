@@ -2,65 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Get Started - Learn Korean</title>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start Page</title>
   <style>
     body {
-      font-family: 'Baloo 2', cursive;
-      background: #f5f0ff;
-      text-align: center;
-      padding: 50px;
-      color: #3d1a6e;
-    }
-
-    h1 {
-      font-size: 2.7em;
-      color: #6a0dad;
-    }
-
-    p {
-      font-size: 1.3em;
-      color: #4b0082;
-    }
-
-    .option-buttons {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #D8B4FF; /* pastel purple */
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
-      margin-top: 40px;
+      justify-content: center;
+      height: 100vh;
+      color: #4B0082;
     }
 
-    button {
-      background-color: #c8a2c8;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      font-family: 'Baloo 2', cursive;
-      border-radius: 15px;
-      cursor: pointer;
-      width: 260px;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #6B4C9A;
+      font-weight: 600;
+      background: #EED6FF;
+      padding: 0.6rem 1.2rem;
+      border-radius: 12px;
       transition: background-color 0.3s ease;
+      box-shadow: 0 3px 6px rgba(107, 76, 154, 0.3);
     }
 
-    button:hover {
-      background-color: #b190c2;
+    .nav-links a:hover {
+      background-color: #C9A4FF;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <h1>🎉 Welcome to Your Korean Journey!</h1>
-  <p>Choose what you'd like to start with:</p>
+  <h1>🌟 Let's Begin! 🌟</h1>
+  <p>Choose your path below 🛤️</p>
 
-  <div class="option-buttons">
-    <button onclick="location.href='Hangul.html'">🅰️ Learn Hangul (Alphabet)</button>
-    <button onclick="location.href='vocabulary.html'">📚 Study Vocabulary</button>
-    <button onclick="location.href='conversation.html'">💬 Practice Conversations</button>
-    <button onclick="location.href='flashcards.html'">🃏 Try Flashcards</button>
-    <button onclick="location.href='quiz.html'">❓ Take a Quiz</button>
-  </div>
+  <nav class="nav-links">
+  <a href="vocabulary.html">Vocabulary</a>
+  <a href="Hangul.html">Hangul</a>
+  <a href="conversation.html">Conversation</a>
+</nav>
+
 
 </body>
 </html>
